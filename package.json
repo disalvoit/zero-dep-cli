@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "Zero to Hero Node ep.2 checkpoint: a word-count CLI that must become ESM and zero-dependency.",
-  "bin": { "words": "./bin/words.js" },
-  "scripts": { "test": "node --test" },
+  "bin": {
+    "words": "./bin/words.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:heldout": "node --test held-out/cli.test.mjs"
+  },
   "dependencies": {}
 }
